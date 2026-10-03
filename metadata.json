@@ -1,0 +1,8 @@
+{
+  "name": "Remix CoffeeCodi - Café \u0026 Tech Capiatá",
+  "description": "Cafetería de especialidad y espacio tech en Capiatá, Paraguay. Menú interactivo, pedidos personalizados, quiz de café ideal y autenticación de clientes con Firebase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

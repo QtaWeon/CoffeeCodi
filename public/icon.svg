@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="40" fill="#2b1810"/>
+  <rect x="12" y="12" width="168" height="168" rx="30" fill="#1c100a" stroke="#ff9241" stroke-width="3" stroke-opacity="0.3"/>
+  <!-- Steam lines -->
+  <path d="M72 44 Q76 32 80 44 Q84 56 88 44" fill="none" stroke="#ff9241" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M96 38 Q100 26 104 38 Q108 50 112 38" fill="none" stroke="#ffdcc7" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <path d="M120 44 Q124 32 128 44 Q132 56 136 44" fill="none" stroke="#ff9241" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <!-- Coffee Cup -->
+  <path d="M52 68 L140 68 L132 128 C130 142 118 152 96 152 C74 152 62 142 60 128 Z" fill="#ff9241"/>
+  <!-- Coffee Foam -->
+  <ellipse cx="96" cy="74" rx="40" ry="10" fill="#ffdcc7"/>
+  <ellipse cx="96" cy="74" rx="28" ry="6" fill="#964900"/>
+  <!-- Handle -->
+  <path d="M136 78 C154 78 162 90 162 104 C162 118 150 126 132 124" fill="none" stroke="#ff9241" stroke-width="9" stroke-linecap="round"/>
+  <!-- Terminal code symbol < > -->
+  <text x="96" y="122" font-family="monospace" font-size="22" font-weight="bold" fill="#2b1810" text-anchor="middle">&lt;☕&gt;</text>
+  <!-- Saucer plate -->
+  <path d="M44 154 L148 154 C152 154 156 158 152 162 C142 170 122 174 96 174 C70 174 50 170 40 162 C36 158 40 154 44 154 Z" fill="#964900"/>
+</svg>

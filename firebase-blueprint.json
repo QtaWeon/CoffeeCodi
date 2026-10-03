@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Customer profile in CoffeeCodi",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 256 },
+        "displayName": { "type": "string", "maxLength": 100 },
+        "photoURL": { "type": "string", "maxLength": 1000 },
+        "role": { "type": "string", "enum": ["customer", "admin"] },
+        "favoriteCoffee": { "type": "string", "maxLength": 100 },
+        "city": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "displayName"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Menu item in CoffeeCodi catalog",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 100 },
+        "category": { "type": "string", "enum": ["cafe", "frias", "te", "pasteleria", "snacks"] },
+        "categoryName": { "type": "string", "maxLength": 50 },
+        "price": { "type": "number" },
+        "description": { "type": "string", "maxLength": 500 },
+        "imageUrl": { "type": "string", "maxLength": 1000 },
+        "badge": { "type": "string", "maxLength": 50 },
+        "specs": { "type": "string", "maxLength": 50 },
+        "customizable": { "type": "boolean" },
+        "available": { "type": "boolean" }
+      },
+      "required": ["id", "name", "category", "price"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "Stores user and customer profiles"
+    },
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Stores CoffeeCodi menu products"
+    }
+  }
+}
